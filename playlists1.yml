@@ -1,0 +1,98 @@
+playlists:
+  Marvel Cinematic Universe Chronological Order:
+    sonarr_add_missing: true
+    sonarr_tag: MCUPMM
+    radarr_add_missing: true
+    radarr_tag: MCUPMM
+    libraries: Movies, TV Shows
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/donxy/lists/marvel-cinematic-universe?sort=rank,asc
+    summary: Marvel Cinematic Universe In Chronological Order
+  Christmas Animation Episodes:
+    sonarr_add_missing: true
+    sonarr_tag: XmasPMM
+    radarr_add_missing: true
+    url_poster_: https://gist.plex.tv/wp-content/uploads/2021/12/ChristmasLights_channel_artwork_horizontal_3.jpg
+    libraries: Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/billy-shakes/lists/christmas-cartoon-episodes-and-specials?sort=title,asc
+    summary: Christmas Cartoons And Specials
+  Arrowverse:
+    sonarr_add_missing: true
+    sonarr_tag: ArrowPMM
+    radarr_add_missing: true
+    radarr_tag: ArrowPMM
+    libraries: Movies, TV Shows
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/donxy/lists/arrowverse
+    summary: This is the simplified list for easy viewing order for Arrowverse!
+  Dragonball: 
+    sonarr_add_missing: true
+    radarr_add_missing: true
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/grawler/lists/dragon-ball-in-order
+    summary: Dragonball In Viewing Order
+  Pokemon: 
+    sonarr_add_missing: true
+    sonarr_tag: PokePMM
+    radarr_add_missing: true
+    radarr_tag: PokePMM
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/munch54/lists/pokemon-watching-order
+    summary: A watching order to the Pokémon franchise.
+  Star Trek:   
+    sonarr_add_missing: true
+    sonarr_tag: StarTrek PMM
+    radarr_add_missing: true
+    radarr_tag: StarTrek PMM
+    libraries: Movies, TV Shows
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/goodevilgenius/lists/star-trek-chronology
+    summary: All Star Trek canon in chronological order, as found on thestartrekchronologyproject.blogspot.com. Includes animated series. Will be updated with new shows as they come out. Does not include Kelvinverse movies.
+  Star Wars: 
+    sonarr_add_missing: true
+    sonarr_tag: StarWars PMM
+    radarr_add_missing: true
+    radarr_tag: StarWars PMM
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/xrayblaster/lists/star-wars-chronological-order?sort=rank,asc
+    summary: All of Star Wars, in chronological order
+  The Clone Wars:
+    sonarr_add_missing: true
+    sonarr_tag: TCW PMM
+    radarr_add_missing: true
+    radarr_tag: TCW PMM
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/tomfin46/lists/star-wars-the-clone-wars-chronological-episode-order
+    summary: The Clone Wars, set between Episode II and III, added to the Star Wars universe like nothing else before it. The beloved animated series took us to strange worlds, explored classic characters, and introduced new heroes and villains. Now that the series is complete and available on Netflix, StarWars.com presents an official chronological order of the show’s 121 episodes, as well as the feature film that started it all. Get ready to have a LONG viewing party…
+  Xmen Chronological:
+    sonarr_add_missing: true
+    sonarr_tag: XMEN PMM
+    radarr_add_missing: true
+    radarr_tag: XMEN PMM
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/heyitsbea/lists/x-men
+    summary: Xmen movies in the right order
+  DC Animated Movie Universe:
+    sonarr_add_missing: true
+    sonarr_tag: DCAMU PMM
+    radarr_add_missing: true
+    radarr_tag: DCAMU PMM
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/donxy/lists/dc-universe-animated-original-movies?sort=rank,asc
+    summary: Justice League The Flashpoint Paradox - resets timelines and combines them into one and Justice League War is the new beginning to a new timeline (animated films based on The New 52 continuity). Else World Movies are Batman Assault on Arkham, Justice League Gods and Monstera, Batman The Killing Joke and Batman Gotham By Gaslight. CW Seeds Constantine City of Demons, does not follow Constantine from Arrowverse. Instead it is the Constantine from JL Dark movie. But maybe later they will connect it to Arrowverse somehow.
+  DC Animated Series Universe:
+    sonarr_add_missing: true
+    sonarr_tag: DCAU
+    radarr_add_missing: true
+    radarr_tag: DCAU
+    libraries: Movies, TV Shows, Animation
+    sync_to_users: all
+    trakt_list: https://trakt.tv/users/donxy/lists/dc-animated-series-universe?sort=rank,asc
+    Summary: Includes Batman-The Animated Series, Batman-Mask of the Phantasm, The New Batman Adventures, Superman-The Animated Series, Batman & Mr. Freeze-SubZero, Batman Beyond-Return of the Joker, Gotham Girls, Lobo, Batman-Mystery of the Batwoman, Chase Me, Batman & Harley Quinn, Batman Beyond, Static Shock, The Zeta Project, Justice League, Justice League Unlimited, Batman Beyond-Batman 75th Anniversary Short. Superman-The Animated Series takes place simultaneously to The New Batman Adventures

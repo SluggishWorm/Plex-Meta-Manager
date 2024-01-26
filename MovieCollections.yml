@@ -1,0 +1,12 @@
+    collections:
+     Stand Up Comedy:
+      trakt_list_details: https://trakt.tv/users/giladg/lists/stand-up-comedy?display=movie&sort=added,asc
+      languages: en
+      radarr_add_missing: true
+      radarr_tag: SUC PMM
+      sort_by: released
+      sort_title: "!029_!Stand Up Collection"
+      sync_mode: sync
+      years: 2010-2025
+      url_poster: https://plexcollectionposters.com/images/2019/05/17/PlexPoster-1140bf77ec845e6aa2.png
+      limit: 100

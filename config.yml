@@ -1,0 +1,360 @@
+## This file is a template remove the .template to use the file
+
+libraries:                       # This is called out once within the config.yml file
+  4K Movies:                        # These are names of libraries in your Plex
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+    - pmm: imdb
+    - pmm: director
+    - pmm: streaming
+      schedule: weekly(saturday)
+    - pmm: franchise
+      sync_mode_: append
+    - pmm: universe
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - file: config/Top-10-Films.yml
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom
+     # - pmm: runtimes
+    #    template_variables:
+     #     horizontal_align: right
+      #    vertical_align: bottom               # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  4K TV:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+    - pmm: imdb
+    - pmm: franchise
+      sync_mode_: append
+    - pmm: universe
+    #- pmm: streaming
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        use_edition: false  
+        builder_level: episode
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+
+  Docos/Reality TV:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+    - pmm: imdb
+    - pmm: streaming
+      schedule: weekly(sunday)
+    - pmm: franchise
+      sync_mode_: append
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - file: config/Top-10-Series.yml
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        use_edition: false  
+        builder_level: episode
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                   # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  TV Shows:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+    - pmm: imdb
+    - pmm: tautulli
+      template_variables:
+        use_watched: true
+        list_days_popular: 7
+        list_size_popular: 10
+        list_days_watched: 7
+        list_size_watched: 10
+        visible_library_watched: true
+        visible_home_watched: false
+        visible_shared_watched: true
+    - pmm: streaming
+      schedule: weekly(monday)
+    - pmm: franchise
+      sync_mode_: append
+    - pmm: universe
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - file: config/Top-10-Series.yml
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        use_edition: false  
+        builder_level: episode
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  Movie Docos:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+    - pmm: imdb
+      template_variables:
+       radarr_tag: imdb250
+    - pmm: seasonal
+    - pmm: franchise
+      sync_mode_: append
+    - pmm: streaming
+      schedule: weekly(tuesday)
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  Animation:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+    - pmm: imdb
+    - pmm: streaming
+      schedule: weekly(wednesday)
+    - pmm: franchise
+      sync_mode_: append
+    - pmm: universe
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - file: config/Top-10-Series.yml
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        use_edition: false  
+        builder_level: episode
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  Movies:
+  metadata_path:
+    - file: config/MovieCollections.yml
+    - pmm: basic # This is a file within PMM's defaults folder
+    - pmm: imdb
+      template_variables:
+       radarr_add_missing: true
+       radarr_tag: imdb250
+    - pmm: tautulli
+      template_variables:
+        use_watched: true
+        list_days_popular: 7
+        list_size_popular: 10
+        list_days_watched: 7
+        list_size_watched: 10
+        visible_library_watched: true
+        visible_home_watched: false
+        visible_shared_watched: true
+    - pmm: seasonal
+      template_variables:
+        use_seperator: true
+        visible_home: true
+        sync_mode: sync
+        radarr_add_missing_christmas: true
+        radarr_add_missing_years: true
+        schedule_christmas: range(12/01-12/26)
+        shecdule_years: range(12/26-01/02)
+    - pmm: franchise
+      template_variables:
+       collection_order: release
+       sync_mode_: append
+       radarr_add_missing: true
+       radarr_tag: PMMFRANCHISE
+    - pmm: universe
+      template_variables:
+       collection_order: release
+       sync_mode_: append
+       radarr_add_missing: true
+       radarr_tag: UniPMM
+    - pmm: streaming        # see the wiki for how to use local files, folders, URLs, or files from git
+  overlay_path:
+    - file: config/Top-10-Films.yml
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  Wrestling:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        use_edition: false  
+        builder_level: episode
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+  UFC And Wrestling PPVs:
+    metadata_path:
+    - pmm: basic                 # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+    overlay_path:
+    - remove_overlays: false     # Set this to true to remove all overlays
+    - pmm: resolution
+      template_variables:
+        horizontal_align: left
+        vertical_align: bottom
+        use_edition: false  
+        builder_level: episode
+    - pmm: audio_codec
+      template_variables:
+        horizontal_align: center
+        vertical_align: bottom                  # This is a file within PMM's defaults folder
+      # see the wiki for how to use local files, folders, URLs, or files from git
+playlist_files:
+- file: config/playlists1.yml
+  libraries: Movies, TV Shows, Animation
+  radarr_add_missing: true
+  sonarr_add_missing: true
+  sonarr_tag: PMM
+  radarr_tag: PMM
+radarr:
+  url: <redacted>
+  token: <redacted>
+  quality_profile: HD-1080p
+  add_missing: false
+  add_existing: false
+  upgrade_existing: false
+  root_folder_path: /media
+  monitor: false
+  availability: released
+  tag: PMM
+  search: false
+  radarr_path:
+  plex_path:
+  ignore_cache: false
+sonarr:
+  url: <redacted>
+  token: <redacted>
+  quality_profile: HD - 720p/1080p
+  add_missing: false
+  add_existing: false
+  upgrade_existing: false
+  root_folder_path: /TV SHows
+  monitor: none
+  availability: released
+  tag: PMM
+  search: false
+  language_profile: English
+  series_type: standard
+  season_folder: true
+  cutoff_search: false
+  sonarr_path:
+  plex_path:
+  ignore_cache: false
+tautulli:
+  url: <redacted>
+  apikey: <redacted>
+settings:
+  cache: true
+  cache_expiration: 60
+  asset_directory: config/assets
+  asset_folders: true
+  asset_depth: 0
+  create_asset_folders: false
+  prioritize_assets: false
+  dimensional_asset_rename: false
+  download_url_assets: false
+  show_missing_season_assets: false
+  show_missing_episode_assets: false
+  show_asset_not_needed: true
+  sync_mode: append
+  minimum_items: 1
+  default_collection_order:
+  delete_below_minimum: true
+  delete_not_scheduled: false
+  run_again_delay: 2
+  missing_only_released: false
+  only_filter_missing: false
+  show_unmanaged: true
+  show_unconfigured: true
+  show_filtered: false
+  show_options: false
+  show_missing: true
+  show_missing_assets: true
+  save_report: false
+  tvdb_language: eng
+  ignore_ids:
+  ignore_imdb_ids:
+  item_refresh_delay: 0
+  playlist_sync_to_user:
+  playlist_exclude_users:
+  playlist_report: false
+  verify_ssl: true
+  custom_repo:
+  check_nightly: false
+
+plex: # Can be individually specified per library as well; REQUIRED for the script to run
+  url: <redacted>
+  token: <redacted>
+  timeout: 60
+  clean_bundles: false
+  empty_trash: false
+  optimize: false
+  db_cache:
+tmdb:                            # REQUIRED for the script to run
+  apikey: <redacted>
+  language: en
+
+  cache_expiration: 60
+  region:
+trakt:
+  client_id: <redacted>
+  client_secret: <redacted>
+  pin:
+  authorization:
+    access_token: <redacted>
+    token_type: <redacted>
+    expires_in: <redacted>
+    refresh_token: <redacted>
+    scope: <redacted>
+    created_at: <redacted>
+    # everything below is autofilled by the script
+   # access_token:
+   # token_type:
+   # expires_in:
+   # refresh_token:
+   # scope: public
+   # created_at:
+  cache_expiration: 60
+  region:
